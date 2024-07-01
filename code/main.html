@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/code/main_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Hamburgueria</title>
+</head>
+<body>
+    <div class="cont">
+        <div class="nav">
+            <div class="logo">
+              <img id="logo" src="/images/logo.png" alt="logo">
+            </div>
+            <!-- _____________________ INPUT ________________________________ -->
+            <div class="pesq_in">
+              <input id="in" type="text" placeholder="Pesquisar um Burgão">
+              <button class="pesq">Pesquisar</button>
+            </div>
+<!-- ------------------------------- hamburguer flutuante ------------------------------------------ -->
+        </div>
+        <div class="burguer">
+           <img class="animated-image" id="hamburguer" src="/images/hamburguer.PNG" alt="hamburguer">
+        </div>
+<!-- ---------------------------------------- Seleções ----------------------------------------- -->
+        <div class="navegador">
+          <div class="a">
+            <a href="#">Inicio</a>
+          </div>
+          <div class="a">
+            <a href="#">Produtos</a>
+          </div>
+          <div class="a">
+            <a href="#">Sobre Nós</a>
+          </div>
+        </div>
+<!-- ---------------------------------------- HAMBURGUERES -------------------------------------- -->
+        <div class="menu_burguer">
+          <div class="burguer1">
+            <img class="burg" src="/images/fotobug2.png" alt="Imagem do hamburguer">
+            <p>X Burgão</p>
+            <form action="#">
+              <button class="botao_quero">Quero Comer!!</button>
+            </form>
+          </div>
+          <div class="burguer2">
+            <img class="burg" src="/images/fotobug2.png" alt="Imagem do hamburguer">
+            <p>Burguer Fodastico</p>
+            <form action="#">
+              <button class="botao_quero">Quero Comer!!</button>
+            </form>
+          </div>
+          <div class="burguer3">
+            <img class="burg" src="/images/fotobug2.png" alt="Imagem do hamburguer">
+            <p>Morto de Fome</p>
+            <form action="#">
+              <button class="botao_quero">Quero Comer!!</button>
+            </form>
+          </div>
+        </div>
+      
+
+<!-- --------------------------------------- RODAPÉ ---------------------------------------------------- -->
+ <div>
+  
+ </div>
+    
+        <footer id="footer">
+          <div class="seta">
+            <img id="seta" src="/images/seta.png" alt="">
+          </div>
+          <div class="contatos">
+            <div>
+              <form action="#">
+                <img id="instagram" src="/images/instagram.png" alt="">
+              </form>
+            </div>
+            <div>
+              <form action="#">
+                <img id="linkedin" src="/images/linkedin.png" alt="">
+              </form>
+            </div>
+            <div>
+              <form action="#">
+                <img id="github" src="/images/github.png" alt="">
+              </form>
+            </div>
+          </div>
+          <div class="direitos">
+            © 2024 Camila Rodrigues. Todos os direitos reservados.
+          </div>
+        </footer>
+      
+    </div>
+</body>
+<script>
+  var seta = document.getElementById('seta');
+  var footer = document.getElementById('footer');
+  
+  seta.addEventListener('click', function() {
+      footer.classList.toggle('subir');
+  });
+</script>
+</html>

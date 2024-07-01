@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background:url(/images/banner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: rgb(255, 221, 126);
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+}
+#logo{
+    width: 25%;
+    display: flex;
+    justify-content: left;
+}
+#in{
+    border: solid 2px rgb(255, 255, 255);
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+.pesq{
+    background-color: rgb(255, 176, 5);
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.pesq_in{
+    display: flex;
+    justify-content: center;
+}
+#hamburguer{
+    width: 20%;
+}
+.burguer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+.animated-image {
+    width: 300px; /* ajuste o tamanho conforme necessário */
+    animation: upDown 2s infinite alternate ease-in-out;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px); /* ajuste a altura do movimento conforme necessário */
+    }
+}
+.navegador{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.a{
+    padding: 5px 40px 5px 40px;
+    transition: transform 0.5s;
+}
+.a:hover{
+    transform: scale(1.5);
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: rgb(226, 147, 0);
+}
+
+.menu_burguer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* no pedding tenho 10px de distancia em cima e em baixo */
+    padding: 10px 0px 10px 0px;
+}
+.burg{
+    display: flex;
+    width: 80%;
+    margin: 5px;
+    box-shadow: rgb(187, 125, 9) 2px 2px 2px 2px;
+}
+
+.burguer1, .burguer2, .burguer3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.botao_quero{
+    padding: 10px;
+    border-radius: 5px;
+    background-color:rgb(255, 176, 5);
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 40px;
+    transition: transform 0.5s;
+}
+.botao_quero:hover{
+    box-shadow: rgb(187, 125, 9) 5px 5px 5px 5px;
+}
+.seta{
+    display: flex;
+    justify-content: center;
+}
+
+#seta{
+    width: 25px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    transition: transform 2s ease-in;
+}
+.subir {
+    transform: translateY(-70bpx); /* ajuste a altura do movimento conforme necessário */
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    /* o codigo abaixo deixa fixo quando rola a tela */
+    /* position: fixed; */
+    bottom: 0;
+    width: 110%;
+ 
+}
+.direitos{
+    display: flex;
+    justify-content: center;
+    color: #ff9900; 
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+.contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #141414;
+}
+
+#instagram, #linkedin, #github{
+    margin: 10px 20px 10px 20px;
+    width: 40px;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+#instagram:hover, #linkedin:hover, #github:hover{
+    transform: scale(1.5);
+}
+
+.cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 10px;
+    bottom: 0;
+    transition: transform 2s ease-in;
+}
+.subir {
+    transform: translateY(-80px); /* ajuste a altura do movimento conforme necessário */
+}
+
+.menu_burguer {
+    flex: 1;
+}
+@media screen and (max-width: 768px){
+    body{
+        display: flex;
+    }
+    #logo{
+        width: 20%;
+        display: flex;
+        justify-content: left;
+    }
+    #in{
+        display: flex;
+        justify-content: center;
+    }
+    #seta{
+        width: 20px;
+        display: flex;
+        flex-direction: row;
+        transition: transform 2s ease-in;
+    }
+    .subir {
+        transform: translateY(-75px); /* ajuste a altura do movimento conforme necessário */
+    }
+}
